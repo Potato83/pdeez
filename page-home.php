@@ -13,9 +13,12 @@ $gif = get_field('gif');
 
 
 <div class="home-wrap">
-
-	<img src="<?php echo $gif['url']; ?>" alt="gif" class="gif"> 
-		
+	
+	<?php
+	if($gif){ ?> ?>
+		<img src="<?php echo $gif['url']; ?>" alt="gif" class="gif"> 
+	<?php } ?>	
+	
 	<?php while ( have_posts() ) : the_post(); ?>
 					
 		<?php the_content(); ?>
