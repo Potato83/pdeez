@@ -4,7 +4,6 @@ Template Name: Video Page
  */
 get_header(); ?>
 
-<h1 class="post-title entry-title"><?php echo the_title(); ?></h1>
 
 <div class="video">
 

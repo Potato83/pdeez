@@ -10,9 +10,9 @@ $gif = get_field('gif');
 
 ?>
 
-
-
 <div class="home-wrap">
+
+
 	
 	<?php
 	if($gif){ ?>

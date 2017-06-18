@@ -26,6 +26,7 @@ body.logged-in{
 	width: 100%;
 	/*margin: 0 10%;*/
 	height: auto;
+	margin-bottom: 25px;
 }
 
 #container{
@@ -63,10 +64,6 @@ body.logged-in{
 	margin-top: 60px;
 	padding: 0;
 	/*padding-left: 12px;*/
-}
-
-.menu-item a {
-	color: #000 !important;
 }
 
 img.size-full{
@@ -107,6 +104,113 @@ img.size-full{
 	width: 250px;
 	height: 250px;
 }
+
+/* MENU */
+
+h1.site-title{
+	max-width: 180px;
+	line-height: 32px;
+}
+
+h1.site-title:hover{
+	text-decoration: underline;
+}
+
+/*li.menu-item > a{
+	color: red !important;
+}*/
+
+.menu-item a {
+	color: #000 !important;
+	/*display: block;
+	background: blue;*/
+/*	width:100%;
+	height: 100%;*/
+	border-bottom: 1px solid transparent;
+
+}
+
+@media (min-width: 768px){
+	#menu-primary.menu-container > .menu{
+		/*padding-left: 0 !important;*/
+		/*background: green;*/
+		float: left;
+	}
+
+	#menu-primary{
+		float: left !important;
+		max-width: 450px;	
+	}
+
+	/*#branding{
+		width: 35% !important;
+	}*/
+}
+
+li.menu-item{
+	/*background: red;*/
+	/*border: 1px solid black;*/
+	/*text-align: right;*/
+/*	padding-left: 0;
+	padding-right: 0;
+	margin-right: 0;
+	margin-left: 0;*/
+}
+
+li.menu-item a,
+li.menu-item-has-children{
+	/*background: blue !important;*/
+	/*max-width: 25px;*/
+	padding-right: 0 !important;
+	/*padding-left: 0 !important;*/
+}
+
+/*.menu-item a &:hover .submenu{
+		color: green;
+}
+
+.menu-item &:hover > a{
+	color: red;
+}*/
+
+.menu-item a:hover{
+	color: #FF41AF !important;
+	border-bottom: 1px solid black;
+}
+
+/*.menu-item:hover > a {
+	background: blue;
+}*/
+
+.sub-menu > .menu-item a:hover{
+	color: #FF41AF !important;
+	border-bottom: 1px solid transparent;
+	width: auto !important;
+	display: inline;
+	/*background: blue;*/
+	/*text-shadow: 2px 2px black;*/
+	text-decoration: underline;
+	text-decoration-color: black;
+}
+
+/*.sub-menu > .menu-item > a:hover{
+	background: green;
+}*/
+
+.sub-menu > .menu-item {
+	/*background: green;*/
+	/*max-width: 50px;*/
+	/*max-height: 25px;*/
+	/*padding: 0;*/
+}
+
+/*.menu-item:hover .menu-item a{
+	background: orange !important;
+}*/
+
+/*#menu-primary li a{
+	color: green;
+}*/
 
 /* Video Gallery */
 
