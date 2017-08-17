@@ -1,5 +1,5 @@
 html, body {
-  height: 100%;
+  height: 90%;
   margin: 0;
 }
 
@@ -19,7 +19,7 @@ body.logged-in{
 	/*padding: 25px;*/
 	float: left;
 	/*display: none;*/
-	margin-top: 50px;
+	margin-top: 0px;
 }
 
 .gif{
@@ -44,16 +44,17 @@ body.logged-in{
 }
 
 .standard{
-	max-width: 700px;
+	max-width: 640px;
 	float: left;
 }
 
 #footer {
 	/*padding-top: 50px;*/
-  height: 60px;
-  margin-top: -90px !important;
+  height: 80px;
+  margin-top: -60px !important; /* was -90px */
   /*background: black;*/
   clear: both;
+  /*margin-bottom: 80px;*/
   /*float: left;*/
   /*max-width: 700px !important;*/
   /*padding: 50px;*/
@@ -61,7 +62,7 @@ body.logged-in{
 }
 
 .footer-content{
-	margin-top: 60px;
+	margin-top: 70px;
 	padding: 0;
 	/*padding-left: 12px;*/
 }
@@ -109,7 +110,7 @@ img.size-full{
 
 h1.site-title{
 	max-width: 180px;
-	line-height: 32px;
+	line-height: 40px;
 }
 
 h1.site-title:hover{
@@ -190,7 +191,7 @@ li.menu-item-has-children{
 
 .menu-item a:hover{
 	color: #FF41AF !important;
-	border-bottom: 1px solid black;
+	/*border-bottom: 1px solid black;*/
 }
 
 /*.menu-item:hover > a {
@@ -199,13 +200,17 @@ li.menu-item-has-children{
 
 .sub-menu > .menu-item a:hover{
 	color: #FF41AF !important;
-	border-bottom: 1px solid transparent;
+	/*border-bottom: 1px solid transparent;*/
 	width: auto !important;
 	display: inline;
 	/*background: blue;*/
 	/*text-shadow: 2px 2px black;*/
-	text-decoration: underline;
+	text-decoration: none;
 	text-decoration-color: black;
+}
+
+.copyright a:hover{
+	color: #FF41AF !important;
 }
 
 /*.sub-menu > .menu-item > a:hover{
