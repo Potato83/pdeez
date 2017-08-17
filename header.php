@@ -49,7 +49,7 @@
 	/* MENU */
 	<?php if(get_field('menu_font', 'option')) : ?>
 	.menu-item a{
-		font-family: <?php the_field('menu_font', 'option'); ?>, <?php the_field('menu_fallback', 'option'); ?>;
+		font-family: <?php the_field('menu_font', 'option'); ?>, <?php the_field('menu_fallback', 'option'); ?> !important;
 	}
 	<?php endif; ?>
 
@@ -65,8 +65,6 @@
 		color: <?php the_field('hover_color', 'option'); ?>!important;
 	}
 	<?php endif; ?>
-
-	
 
 </style>
 
@@ -91,7 +89,10 @@
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
                         
 					<?php else : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<?php if (!get_field('hide_title', 'option')) : ?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>	
+						<?php endif; ?>
+						
 					<?php endif;
 
 					$description = get_bloginfo( 'description', 'display' );

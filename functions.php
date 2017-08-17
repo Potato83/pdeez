@@ -8,5 +8,6 @@ function my_theme_enqueue_styles() {
 if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page('Fonts & Colours');
+	acf_add_options_page('Title');
 	
 }
