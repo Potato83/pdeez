@@ -10,7 +10,7 @@ $gif = get_field('gif');
 
 ?>
 
-<div class="home-wrap">
+<div class="home-wrap standard">
 
 
 	
