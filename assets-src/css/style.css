@@ -7,6 +7,14 @@ body.logged-in{
 	margin-top: -32px;
 }
 
+p{
+	margin-bottom: 1em !important;
+}
+
+#header{
+	margin-bottom: 25px !important;
+}
+
 .menu .sf-with-ul{
 	background: none !important;
 }

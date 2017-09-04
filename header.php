@@ -33,6 +33,12 @@
 	}
 	<?php endif; ?>
 
+	<?php if(get_field('line_height', 'option')) : ?>
+	p{
+		line-height: <?php the_field('line_height', 'option'); ?>em;
+	}
+	<?php endif; ?>
+
 	/* SITE TITLE */
 	<?php if(get_field('title_font', 'option')) : ?>
 	.site-title a{
