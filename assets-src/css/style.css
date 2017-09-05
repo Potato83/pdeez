@@ -11,6 +11,8 @@ p{
 	margin-bottom: 1em !important;
 }
 
+
+
 #header{
 	margin-bottom: 25px !important;
 }
@@ -135,6 +137,10 @@ li.menu-item{
 	#branding{
 		width: 25% !important;
 	}
+
+	.audio-fix{
+		width: 640px
+	}
 	
 }
 
@@ -184,4 +190,10 @@ li.menu-item-has-children{
 		max-width: 300px;
 		padding-top: 75px;
 	}
+
+	.audio-fix{
+		width: 300px;
+	}	
 }
+
+

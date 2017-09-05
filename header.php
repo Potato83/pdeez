@@ -3,17 +3,18 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="google-site-verification" content="4t1mYI7F0cvpL-8Hgxaa9pd5HZ4rcYPlfDaStI7AqdM" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="stylesheet" href="<?=get_stylesheet_directory_uri()?>/assets/css/style.min.css" />
 	<?php if(get_field('title_font', 'option')) : ?>
-	<link href="https://fonts.googleapis.com/css?family=<?php the_field('title_font', 'option'); ?>" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=<?php the_field('title_font_option', 'option'); ?>" rel="stylesheet">
 	<?php endif; ?>
 	<?php if(get_field('menu_font', 'option')) : ?>
-	<link href="https://fonts.googleapis.com/css?family=<?php the_field('menu_font', 'option'); ?>" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=<?php the_field('menu_font_option', 'option'); ?>" rel="stylesheet">
 	<?php endif; ?>
 	<?php if(get_field('body_font', 'option')) : ?>
-	<link href="https://fonts.googleapis.com/css?family=<?php the_field('body_font', 'option'); ?>" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=<?php the_field('body_font_option', 'option'); ?>" rel="stylesheet">
 	<?php endif; ?>
 	<?php wp_head(); ?>
 </head>
